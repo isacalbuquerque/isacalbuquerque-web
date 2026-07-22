@@ -53,6 +53,16 @@ export default function Home() {
             </a>
           </div>
         </div>
+
+        {/* Scroll Indicator */}
+        <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 z-20">
+          <div className="flex flex-col items-center gap-2">
+            <span className="text-gray-400 text-sm">Role para explorar</span>
+            <div className="w-6 h-10 border-2 border-gray-400 rounded-full flex items-start justify-center p-2">
+              <div className="w-1.5 h-1.5 bg-gray-400 rounded-full animate-bounce"></div>
+            </div>
+          </div>
+        </div>
       </section>
 
       {/* 2. TIMELINE: DO ACADÊMICO AO MERCADO */}
@@ -68,8 +78,7 @@ export default function Home() {
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-            
-            <div className="relative bg-slate-900/60 backdrop-blur-sm border border-indigo-500/20 rounded-2xl p-8 hover:border-indigo-500/40 transition-all">
+            <div className="relative bg-slate-900/60 backdrop-blur-sm border border-indigo-500/20 rounded-2xl p-8">
               <div className="flex items-start gap-6">
                 <div className="flex-shrink-0 w-16 h-16 rounded-xl bg-gradient-to-br from-indigo-500 to-purple-500 p-0.5">
                   <div className="w-full h-full bg-slate-900 rounded-xl flex items-center justify-center font-bold text-indigo-400">01</div>
@@ -82,7 +91,7 @@ export default function Home() {
               </div>
             </div>
 
-            <div className="relative bg-slate-900/60 backdrop-blur-sm border border-indigo-500/20 rounded-2xl p-8 hover:border-indigo-500/40 transition-all">
+            <div className="relative bg-slate-900/60 backdrop-blur-sm border border-indigo-500/20 rounded-2xl p-8">
               <div className="flex items-start gap-6">
                 <div className="flex-shrink-0 w-16 h-16 rounded-xl bg-gradient-to-br from-purple-500 to-pink-500 p-0.5">
                   <div className="w-full h-full bg-slate-900 rounded-xl flex items-center justify-center font-bold text-purple-400">02</div>
@@ -95,7 +104,7 @@ export default function Home() {
               </div>
             </div>
 
-            <div className="relative bg-slate-900/60 backdrop-blur-sm border border-indigo-500/20 rounded-2xl p-8 hover:border-indigo-500/40 transition-all">
+            <div className="relative bg-slate-900/60 backdrop-blur-sm border border-indigo-500/20 rounded-2xl p-8">
               <div className="flex items-start gap-6">
                 <div className="flex-shrink-0 w-16 h-16 rounded-xl bg-gradient-to-br from-pink-500 to-cyan-500 p-0.5">
                   <div className="w-full h-full bg-slate-900 rounded-xl flex items-center justify-center font-bold text-pink-400">03</div>
@@ -108,7 +117,7 @@ export default function Home() {
               </div>
             </div>
 
-            <div className="relative bg-slate-900/60 backdrop-blur-sm border border-indigo-500/20 rounded-2xl p-8 hover:border-indigo-500/40 transition-all">
+            <div className="relative bg-slate-900/60 backdrop-blur-sm border border-indigo-500/20 rounded-2xl p-8">
               <div className="flex items-start gap-6">
                 <div className="flex-shrink-0 w-16 h-16 rounded-xl bg-gradient-to-br from-cyan-500 to-indigo-500 p-0.5">
                   <div className="w-full h-full bg-slate-900 rounded-xl flex items-center justify-center font-bold text-cyan-400">04</div>
@@ -120,7 +129,6 @@ export default function Home() {
                 </div>
               </div>
             </div>
-
           </div>
         </div>
       </section>
@@ -138,8 +146,7 @@ export default function Home() {
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            
-            <div className="bg-slate-900/50 backdrop-blur-sm border border-indigo-500/20 rounded-2xl p-8 hover:border-indigo-500/40 transition-all">
+            <div className="bg-slate-900/50 backdrop-blur-sm border border-indigo-500/20 rounded-2xl p-8">
               <h3 className="text-2xl font-bold text-white mb-4">Desenvolvimento Web Progressivo</h3>
               <p className="text-gray-400 leading-relaxed mb-6">Aplicações web modernas e performáticas utilizando React, Next.js e as melhores práticas de otimização.</p>
               <div className="flex flex-wrap gap-2">
@@ -149,7 +156,7 @@ export default function Home() {
               </div>
             </div>
 
-            <div className="bg-slate-900/50 backdrop-blur-sm border border-indigo-500/20 rounded-2xl p-8 hover:border-indigo-500/40 transition-all">
+            <div className="bg-slate-900/50 backdrop-blur-sm border border-indigo-500/20 rounded-2xl p-8">
               <h3 className="text-2xl font-bold text-white mb-4">Apps Mobile Nativos / Híbridos</h3>
               <p className="text-gray-400 leading-relaxed mb-6">Desenvolvimento de aplicativos mobile multiplataforma com React Native e Flutter de alta performance.</p>
               <div className="flex flex-wrap gap-2">
@@ -159,7 +166,7 @@ export default function Home() {
               </div>
             </div>
 
-            <div className="bg-slate-900/50 backdrop-blur-sm border border-indigo-500/20 rounded-2xl p-8 hover:border-indigo-500/40 transition-all">
+            <div className="bg-slate-900/50 backdrop-blur-sm border border-indigo-500/20 rounded-2xl p-8">
               <h3 className="text-2xl font-bold text-white mb-4">Arquitetura de Sistemas</h3>
               <p className="text-gray-400 leading-relaxed mb-6">Design e implementação de arquiteturas escaláveis, resilientes e orientadas a microserviços.</p>
               <div className="flex flex-wrap gap-2">
@@ -168,7 +175,6 @@ export default function Home() {
                 <span className="px-3 py-1 bg-indigo-500/10 border border-indigo-500/20 rounded-lg text-sm text-indigo-300">Cloud</span>
               </div>
             </div>
-
           </div>
         </div>
       </section>
@@ -193,7 +199,84 @@ export default function Home() {
         </div>
       </section>
 
-      {/* 5. SEÇÃO DE CONTATO */}
+      {/* 5. PROJETOS EM DESTAQUE */}
+      <section className="py-24 px-4 sm:px-6 lg:px-8 relative overflow-hidden">
+        <div className="max-w-7xl mx-auto relative z-10">
+          <div className="text-center mb-16">
+            <h2 className="text-4xl sm:text-5xl font-bold mb-6 bg-gradient-to-r from-white via-indigo-200 to-cyan-200 bg-clip-text text-transparent">
+              Projetos em Destaque
+            </h2>
+            <p className="text-xl text-gray-300 max-w-3xl mx-auto">
+              Soluções reais entregues para clientes reais, com resultados mensuráveis
+            </p>
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+            <div className="bg-slate-900/50 backdrop-blur-sm border border-indigo-500/20 rounded-2xl overflow-hidden hover:border-indigo-500/40 transition-all">
+              <div className="relative h-64 overflow-hidden">
+                <img src="https://images.unsplash.com/photo-1636216248918-918b90e6eaeb" alt="E-commerce" className="w-full h-full object-cover"/>
+              </div>
+              <div className="p-8">
+                <h3 className="text-2xl font-bold text-white mb-4">Plataforma E-commerce Enterprise</h3>
+                <p className="text-gray-400 leading-relaxed mb-6">Sistema completo de e-commerce com gestão de inventário, processamento de pagamentos e analytics em tempo real.</p>
+                <div className="flex flex-wrap gap-2 mb-6">
+                  <span className="px-3 py-1 bg-indigo-500/10 border border-indigo-500/20 rounded-lg text-sm text-indigo-300">React</span>
+                  <span className="px-3 py-1 bg-indigo-500/10 border border-indigo-500/20 rounded-lg text-sm text-indigo-300">Node.js</span>
+                  <span className="px-3 py-1 bg-indigo-500/10 border border-indigo-500/20 rounded-lg text-sm text-indigo-300">PostgreSQL</span>
+                </div>
+              </div>
+            </div>
+
+            <div className="bg-slate-900/50 backdrop-blur-sm border border-indigo-500/20 rounded-2xl overflow-hidden hover:border-indigo-500/40 transition-all">
+              <div className="relative h-64 overflow-hidden">
+                <img src="https://images.unsplash.com/photo-1636216248918-918b90e6eaeb" alt="App Mobile" className="w-full h-full object-cover"/>
+              </div>
+              <div className="p-8">
+                <h3 className="text-2xl font-bold text-white mb-4">App Mobile de Gestão Financeira</h3>
+                <p className="text-gray-400 leading-relaxed mb-6">Aplicativo mobile multiplataforma para controle financeiro pessoal com sincronização em nuvem e gráficos interativos.</p>
+                <div className="flex flex-wrap gap-2 mb-6">
+                  <span className="px-3 py-1 bg-indigo-500/10 border border-indigo-500/20 rounded-lg text-sm text-indigo-300">React Native</span>
+                  <span className="px-3 py-1 bg-indigo-500/10 border border-indigo-500/20 rounded-lg text-sm text-indigo-300">GraphQL</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* 6. INSIGHTS & CONHECIMENTO */}
+      <section className="py-24 px-4 sm:px-6 lg:px-8 relative overflow-hidden bg-slate-900/40">
+        <div className="max-w-7xl mx-auto relative z-10">
+          <div className="text-center mb-16">
+            <h2 className="text-4xl sm:text-5xl font-bold mb-6 bg-gradient-to-r from-white via-indigo-200 to-cyan-200 bg-clip-text text-transparent">
+              Insights & Conhecimento
+            </h2>
+            <p className="text-xl text-gray-300 max-w-3xl mx-auto">
+              Artigos técnicos e estratégicos sobre desenvolvimento de software de alta performance
+            </p>
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <article className="bg-slate-900/50 backdrop-blur-sm border border-indigo-500/20 rounded-2xl p-8">
+              <div className="text-sm text-gray-400 mb-4">15 Fev 2026 &bull; 8 min</div>
+              <h3 className="text-xl font-bold text-white mb-4">Como Otimizar Performance em Aplicações React</h3>
+              <p className="text-gray-400 leading-relaxed text-sm mb-6">Descubra técnicas avançadas de otimização que transformam aplicações React lentas em experiências ultra-rápidas.</p>
+            </article>
+            <article className="bg-slate-900/50 backdrop-blur-sm border border-indigo-500/20 rounded-2xl p-8">
+              <div className="text-sm text-gray-400 mb-4">10 Fev 2026 &bull; 12 min</div>
+              <h3 className="text-xl font-bold text-white mb-4">Arquitetura Escalável: Do Conceito à Produção</h3>
+              <p className="text-gray-400 leading-relaxed text-sm mb-6">Um guia completo sobre como projetar sistemas que crescem com seu negócio, padrões e microserviços.</p>
+            </article>
+            <article className="bg-slate-900/50 backdrop-blur-sm border border-indigo-500/20 rounded-2xl p-8">
+              <div className="text-sm text-gray-400 mb-4">5 Fev 2026 &bull; 10 min</div>
+              <h3 className="text-xl font-bold text-white mb-4">Mobile-First: Estratégia que Aumenta Conversão</h3>
+              <p className="text-gray-400 leading-relaxed text-sm mb-6">Por que começar pelo mobile não é apenas uma tendência, mas uma necessidade estratégica para seu negócio.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      {/* 7. SEÇÃO DE CONTATO */}
       <section id="contato" className="py-24 px-4 sm:px-6 lg:px-8 relative overflow-hidden">
         <div className="max-w-4xl mx-auto relative z-10">
           <div className="text-center mb-16">
@@ -245,7 +328,7 @@ export default function Home() {
         </div>
       </section>
 
-      {/* 6. RODAPÉ */}
+      {/* 8. RODAPÉ */}
       <footer className="py-12 px-4 sm:px-6 lg:px-8 border-t border-indigo-500/20 bg-slate-950">
         <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-8 mb-8">
           <div>
